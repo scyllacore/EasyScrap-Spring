@@ -3,22 +3,22 @@
 
 <head>
     <link rel="stylesheet" href="/css/login/login.css"/>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
 <div class="container" id="container">
     <div class="form-container sign-up-container">
-        <form action="#">
+        <form name="sign_up_form">
             <h1>EasyScrap</h1>
-            <input type="text" placeholder="Name"/>
-            <input type="email" placeholder="Email"/>
-            <input type="password" placeholder="Password"/>
-            <button>회원 가입하기</button>
+            <input type="text" placeholder="Username" name="username"/>
+            <input type="email" placeholder="Email"name="email"/>
+            <input type="password" placeholder="Password" name="password"/>
+            <button type="button" onclick=signUp()>회원 가입하기</button>
             <span>다른 수단으로 회원가입 하기</span>
             <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social"><i class="fab fa-github"></i></a>
             </div>
         </form>
     </div>
@@ -31,9 +31,8 @@
             <button>로그인</button>
             <span>다른 수단으로 로그인 하기</span>
             <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social"><i class="fab fa-github"></i></a>
             </div>
         </form>
     </div>
