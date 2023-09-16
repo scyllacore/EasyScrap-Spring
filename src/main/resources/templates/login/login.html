@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <link rel="stylesheet" href="/css/login.css"/>
+</head>
+
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form action="#">
+            <h1>EasyScrap</h1>
+            <input type="text" placeholder="Name"/>
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Password"/>
+            <button>회원 가입하기</button>
+            <span>다른 수단으로 회원가입 하기</span>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form action="#">
+            <h1>EasyScrap</h1>
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Password"/>
+            <a href="#">비밀번호를 잊어버렸나요?</a>
+            <button>로그인</button>
+            <span>다른 수단으로 로그인 하기</span>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>이미 회원이신가요?</h1>
+                <p>로그인을 하고, 다양한 기능을 활용해보세요! </p>
+                <button class="ghost" id="signIn">로그인 하러가기</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>아직 회원이 아니신가요?</h1>
+                <p>회원 가입하고, 다양한 기능을 활용해보세요!</p>
+                <button class="ghost" id="signUp">회원 가입 하러가기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/login.js"></script>
+
+
+</body>
+</html>
